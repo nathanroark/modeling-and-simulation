@@ -63,13 +63,13 @@ const cellColorVariants = new Map<string, string>([
 ]);
 
 const twButton =
-  "border  lg:font-bold px-2 py-1 lg:px-4 lg:py-2 font-bold text-zinc-300 border-zinc-300 bg-zinc-950";
+  "border  lg:font-bold h-fit px-2 py-1 lg:px-4 lg:py-2  text-zinc-300 border-zinc-300 bg-zinc-950";
 
 const startButton =
-  "border  lg:font-bold  px-2 py-1 lg:px-4 lg:py-2 font-bold text-green-500 border-green-500 bg-zinc-950";
+  "border  lg:font-bold  h-fit px-2 py-1 lg:px-4 lg:py-2  text-green-500 border-green-500 bg-zinc-950";
 
 const stopButton =
-  "border lg:font-bold  px-2 py-1 lg:px-4 lg:py-2 font-bold text-red-500 border-red-500  bg-zinc-950";
+  "border lg:font-bold  h-fit px-2 py-1 lg:px-4 lg:py-2 text-red-500 border-red-500  bg-zinc-950";
 
 const numRows = 40;
 const numCols = 40;
@@ -167,7 +167,7 @@ const GameOfLife: React.FC = () => {
     <section className="fixed bottom-0 right-0 h-[calc(100vh-3.5rem)] w-full lg:h-screen lg:w-[calc(100vw-18rem)]">
       <div className="flex h-full w-full items-center justify-center bg-black">
         <div className="flex flex-col xl:flex-row ">
-          <div className="flex w-fit flex-row justify-center gap-2 pb-4 xl:flex-col xl:pr-8">
+          <div className="flex w-fit flex-row items-end justify-center gap-2 pb-4 text-xs sm:text-sm md:text-lg xl:flex-col xl:pr-8">
             <button
               className={running ? stopButton : startButton}
               onClick={() => {

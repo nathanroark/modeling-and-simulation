@@ -8,13 +8,13 @@ import Link from "next/link";
 import { colorOptions, buttonColorVariants } from "@/helpers/TWHelpers";
 
 const twButton =
-  "border  lg:font-bold px-2 py-1 lg:px-4 lg:py-2  text-zinc-300 border-zinc-300 bg-zinc-950";
+  "border  lg:font-bold h-fit px-2 py-1 lg:px-4 lg:py-2  text-zinc-300 border-zinc-300 bg-zinc-950";
 
 const startButton =
-  "border  lg:font-bold  px-2 py-1 lg:px-4 lg:py-2  text-green-500 border-green-500 bg-zinc-950";
+  "border  lg:font-bold  h-fit px-2 py-1 lg:px-4 lg:py-2  text-green-500 border-green-500 bg-zinc-950";
 
 const stopButton =
-  "border lg:font-bold  px-2 py-1 lg:px-4 lg:py-2 text-red-500 border-red-500  bg-zinc-950";
+  "border lg:font-bold  h-fit px-2 py-1 lg:px-4 lg:py-2 text-red-500 border-red-500  bg-zinc-950";
 
 const cellColor = (cell: string) => {
   if (cell == "dirt") return "bg-stone-600/90";
@@ -67,9 +67,9 @@ const WSPPage: React.FC = () => {
 
   return (
     <section className=" fixed bottom-0 right-0 h-[calc(100vh-3.5rem)] w-full lg:h-screen lg:w-[calc(100vw-18rem)]">
-      <div className="flex h-full flex-col items-center justify-center text-sm md:text-lg xl:flex-row">
+      <div className="flex h-full flex-col items-center justify-center  text-xs sm:text-sm md:text-lg xl:flex-row">
         <div className=" flex w-fit gap-8  xl:mr-32 xl:w-52 xl:flex-col">
-          <div className="flex h-fit w-full gap-2 xl:mb-4 xl:ml-4 xl:flex-col">
+          <div className="flex h-full w-full flex-row items-end gap-2 xl:mb-4 xl:ml-4 xl:flex-col">
             <button
               className={running ? stopButton : startButton}
               onClick={() => {
@@ -125,7 +125,7 @@ const WSPPage: React.FC = () => {
             <a className="text-emerald-700">Green: Grass</a>
             <a className="text-stone-500">Brown: Dirt</a>
           </div>
-          <div className=" pr-2 font-bold text-white sm:w-1/6 xl:w-full  ">
+          <div className=" pr-2 text-white sm:w-1/6 lg:font-bold xl:w-full  ">
             <div className="flex w-24 justify-between xl:w-full">
               <div>clock</div> <div>{state.clock}</div>
             </div>
