@@ -19,7 +19,7 @@ export default function Byline({ className }: { className: string }) {
         <div className="text-sm text-zinc-400">
           <a
             className="underline decoration-dotted underline-offset-4 transition-colors hover:text-zinc-300"
-            href="https://github.com/vercel/app-playground"
+            href="https://github.com/nathanroark/modeling-and-simulation"
             target="_blank"
             rel="noreferrer"
           >
