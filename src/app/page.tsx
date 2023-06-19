@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Page() {
   return (
     <section className="fixed bottom-0 right-0 h-[calc(100vh-3.5rem)] w-full lg:h-screen lg:w-[calc(100vw-18rem)]">
-      <div className="mx-4 mt-8 md:m-16 md:mt-4">
-        <h1 className="text-xl font-medium text-zinc-300 lg:text-3xl">
+      <div className="mx-4 mt-8 md:mx-16 md:mt-4">
+        <h1 className="my-8 text-xl font-medium text-zinc-300 lg:text-3xl">
           Projects
         </h1>
         <div className="space-y-10 text-white">
