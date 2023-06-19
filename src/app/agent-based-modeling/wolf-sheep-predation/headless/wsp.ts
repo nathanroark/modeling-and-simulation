@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// Author:  Nathan Roark, nwr0002@uah.edu
+// Author:  Nathan Roark
 // School:  The University of Alabama in Huntsville
 // Program: Wolf-Sheep Predation (Program 3)
 // Course:  CS 582, Modeling and Simulation 2

@@ -1,10 +1,10 @@
-import { ImageResponse } from 'next/server';
-import { ReactIcon } from '@/components/icons';
-export const runtime = 'edge';
+import { ImageResponse } from "next/server";
+import { ReactIcon } from "@/components/icons";
+export const runtime = "edge";
 
 export async function GET() {
-  const title = 'Modeling and Simulation';
-  const description = 'Nathan Roark';
+  const title = "Modeling and Simulation";
+  const description = "Nathan Roark";
   return new ImageResponse(
     (
       <div tw="flex flex-row-reverse h-full bg-gray-900">

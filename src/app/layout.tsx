@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
 import { GlobalNav } from "@/components/global-nav";
 
@@ -9,15 +8,15 @@ export const metadata: Metadata = {
     default: "Modeling and Simulation",
     template: "%s | M&S",
   },
-  description: "Software Engineer",
+  description: "Modeling and Simulation",
   openGraph: {
     title: "Modeling and Simulation",
     description: "Nathan Roark",
-    url: "https://nathanroark.dev",
+    url: "https://modeling-and-simulation.nathanroark.dev/",
     siteName: "Nathan Roark",
     images: [
       {
-        url: "https://nathanroark.dev/og",
+        url: "https://modeling-and-simulation.nathanroark.dev/og",
         width: 1920,
         height: 1080,
       },
